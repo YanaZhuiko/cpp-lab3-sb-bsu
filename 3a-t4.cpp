@@ -1,8 +1,10 @@
 #include <iostream>
+#include<limits>
 using namespace std;
 int main()
 {
-int number = 0;
+int k, i = 1, sum_k = 0, number;
+
 cout << "Enter a number from 1 to 5 : ";
 cin >> number; //initialize number
 switch(number)
