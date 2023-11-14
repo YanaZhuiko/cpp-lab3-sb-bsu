@@ -25,4 +25,5 @@ break;
 default :
      cout << "The number is not within 1 to 5 range";
 }
-return 0; }
+return 0; 
+}
