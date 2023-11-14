@@ -1,28 +1,20 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
-int number = 0;
-cout << "Enter a number from 1 to 5 : ";
-cin >> number;
-switch(number)
-{ 
-     case 1:
-           cout << "one";
-           break;
-     case 2:
-           cout << "two";
-           break;
-     case 3:
-           cout << "three";
-           break;
-     case 4:
-           cout << "four";
-           break;
-     case 5:
-           cout << "five";
-break;
-default :
-     cout << "The number is not within 1 to 5 range";
+int k, i = 1, sum_k = 0, number;
+cout << "Enter the amount of integers to sum = ";
+cin >> k;
+if (k == 0) {
+cout << "The sum of 0 integers is 0." << endl;
+return 0;
 }
-return 0; }
+do {
+cout << "Enter integer nr. " << i << ": ";
+cin >> number;
+sum_k += number; i++;
+} while (i <= k);
+cout << "The total sum of " << k << " integers is: " << sum_k;
+return 0;
+}
